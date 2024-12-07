@@ -1,102 +1,109 @@
-# #Üleasnne1 
+ï»¿# #Ãœleasnne1 
 # nimi=input("Mis on sinu nimi? ")
 # if nimi.isalpha() and nimi.isupper():
-#     if nimi=="JUKU":
-#         print("Läheme kinno")
-#         try:
-#             vanus=int(input(f"Kui vana sa oled {nimi}?"))
-#             if vanus<0:
-#                 print("Viga!")
-#             elif vanus<=6:
-#                 print("Tasuta")
-#             elif vanus<15:
-#                 print("Lastepilet")
-#             elif vanus<65:
-#                 print("Täispilet")
-#             elif vanus<100:
-#                 print("Sooduspilet")
-#             else:
-#                 print("Nii palju!!!!")
-#         except:
-#             print("Täisarv oli vaja sissestada")
-#     else:
-#         print("Ootan Juku")
+# Â  Â  if nimi=="JUKU":
+# Â  Â  Â  Â  print("LÃ¤heme kinno")
+# Â  Â  Â  Â  try:
+# Â  Â  Â  Â  Â  Â  vanus=int(input(f"Kui vana sa oled {nimi}?"))
+# Â  Â  Â  Â  Â  Â  if vanus<0:
+# Â  Â  Â  Â  Â  Â  Â  Â  print("Viga!")
+# Â  Â  Â  Â  Â  Â  elif vanus<=6:
+# Â  Â  Â  Â  Â  Â  Â  Â  print("Tasuta")
+# Â  Â  Â  Â  Â  Â  elif vanus<15:
+# Â  Â  Â  Â  Â  Â  Â  Â  print("Lastepilet")
+# Â  Â  Â  Â  Â  Â  elif vanus<65:
+# Â  Â  Â  Â  Â  Â  Â  Â  print("TÃ¤ispilet")
+# Â  Â  Â  Â  Â  Â  elif vanus<100:
+# Â  Â  Â  Â  Â  Â  Â  Â  print("Sooduspilet")
+# Â  Â  Â  Â  Â  Â  else:
+# Â  Â  Â  Â  Â  Â  Â  Â  print("Nii palju!!!!")
+# Â  Â  Â  Â  except:
+# Â  Â  Â  Â  Â  Â  print("TÃ¤isarv oli vaja sissestada")
+# Â  Â  else:
+# Â  Â  Â  Â  print("Ootan Juku")
 # else:
-#     print("Segatud sõne")
-
-
-    
-# #Üleasnne 2
+# Â  Â  print("Segatud sÃµne")
+# #Ãœleasnne 2
 # # var1
 # nimi1=input("1. Mis on sinu nimi? ")
 # nimi2=input("2. MIs on sinu nimi? ")
 # nimed=["Kieill","Gleb"]
 # if nimi1.isalpha() and nimi2.ialpha():
-#     if(nimi1 in nimed) and (nimi2 in nimed):
-#         print("nad on pinginaabrid")
-#     else:
-#         print("Nad ei ole naaabrid")
+# Â  Â  if(nimi1 in nimed) and (nimi2 in nimed):
+# Â  Â  Â  Â  print("nad on pinginaabrid")
+# Â  Â  else:
+# Â  Â  Â  Â  print("Nad ei ole naaabrid")
 # else:
-#     print("Viga")
-#  # var2
+# Â  Â  print("Viga")
+# Â # var2
 # if (nimi1=="KIril" and nimi2=="Gleb") or (nimi2=="Kiril" and nimi1=="Gleb"):
-#     print("Nad on pinginaabrid")
+# Â  Â  print("Nad on pinginaabrid")
 # else:
-#     print("Nad ei ole naabrid")
+# Â  Â  print("Nad ei ole naabrid")
 
 
-# #Üleasnne 3
+# #Ãœleasnne 3
 # try:
-#     a=float(input("Toa pikkus:"))
-#     b=float(input("Toa laius:"))
-#     S=a*b
-#     print(f"Põranda pindalda on {S} m**2")
-#     vastus=input("Kas tahad remonti teha?(Jah-1/Ei-0)") 
-#     if vastus.upper()=="JAH" or vastus=="1":
-#         print("Remont")
-#         hind=float(input("Ühe meetri hind: "))
-#         summa=hind*S
-#         print(f"Remondi kulud: {summa} eur")
-#     elif vastus.upper()=="EI" or vastus=="0":
-#         print("-")
-#     else:
-#         print("Ei saa aru")
+# Â  Â  a=float(input("Toa pikkus:"))
+# Â  Â  b=float(input("Toa laius:"))
+# Â  Â  S=a*b
+# Â  Â  print(f"PÃµranda pindalda on {S} m**2")
+# Â  Â  vastus=input("Kas tahad remonti teha?(Jah-1/Ei-0)") 
+# Â  Â  if vastus.upper()=="JAH" or vastus=="1":
+# Â  Â  Â  Â  print("Remont")
+# Â  Â  Â  Â  hind=float(input("Ãœhe meetri hind: "))
+# Â  Â  Â  Â  summa=hind*S
+# Â  Â  Â  Â  print(f"Remondi kulud: {summa} eur")
+# Â  Â  elif vastus.upper()=="EI" or vastus=="0":
+# Â  Â  Â  Â  print("-")
+# Â  Â  else:
+# Â  Â  Â  Â  print("Ei saa aru")
 # except:
-#     print("Numbrid!!!!")
+# Â  Â  print("Numbrid!!!!")
 
 
-# #Ülesanne 4
+# #Ãœlesanne 4
 # alg_hind = float(input("Mis on toote alghind? "))
 # if alg_hind > 700:
-#     soodustus = 0.30 * alg_hind
-#     uus_hind = alg_hind - soodustus
-#     print(f"30% soodustus! Uus hind on {uus_hind:.2f} eurot.")
+# Â  Â  soodustus = 0.30 * alg_hind
+# Â  Â  uus_hind = alg_hind - soodustus
+# Â  Â  print(f"30% soodustus! Uus hind on {uus_hind:.2f} eurot.")
 # else:
-#     print("Soodustus ei kehti, kuna alghind on väiksem või võrdne 700.")
+# Â  Â  print("Soodustus ei kehti, kuna alghind on vÃ¤iksem vÃµi vÃµrdne 700.")
 
-# #Üleasnne 5
+# #Ãœleasnne 5
 # temperatuur = float(input("Mis on hetke temperatuur? "))
 # if temperatuur > 18:
-#     print("Temperatuur on üle 18 kraadi, see on sobilik toasoojus talvel.")
+# Â  Â  print("Temperatuur on Ã¼le 18 kraadi, see on sobilik toasoojus talvel.")
 # else:
-#     print("Temperatuur on alla 18 kraadi, see on külm.")
+# Â  Â  print("Temperatuur on alla 18 kraadi, see on kÃ¼lm.")
 
-# #Üleasnne 6 
+# #Ãœleasnne 6 
 # pikkus=int(input("Mis pikkus teil on ?"))
 # if pikkus <=150:
-#     print("Lühike pikkus")
+# Â  Â  print("LÃ¼hike pikkus")
 # elif pikkus<=180:
-#     print("Keskmine pikkus")
+# Â  Â  print("Keskmine pikkus")
 # elif pikkus<=200:
-#     print("Pikk pikkus")
+# Â  Â  print("Pikk pikkus")
 
-# # Ülesanne 7
+# # Ãœlesanne 7
 # sugu=input("Mis sugu sa oled(mees/naine): ")
 # pikkus=int(input("Mis pikkus teil on ?"))
 # if pikkus <=150:
-#     kategooria="Lühike"
+# Â  Â  kategooria="LÃ¼hike"
 # elif pikkus<=180:
-#     kategooria="Keskmine"
+# Â  Â  kategooria="Keskmine"
 # elif pikkus<=200:
-#     kategooria="Pikk"
+# Â  Â  kategooria="Pikk"
 # print(f"Tere pikkus on {kategooria} {sugu}")
+
+#Ãœleasnne 8
+tooteid={
+"pimm":(1),
+"leib":(0.80),
+"munad":(1.20),
+"suhkur":(2.59)
+}
+
+print(f"Kas tahad osta {tooteid}? Hind:{} ")
