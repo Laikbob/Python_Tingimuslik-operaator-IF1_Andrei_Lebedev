@@ -1,4 +1,6 @@
-﻿# #Üleasnne1 
+import random
+
+# #Üleasnne1 
 # nimi=input("Mis on sinu nimi? ")
 # if nimi.isalpha() and nimi.isupper():
 #     if nimi=="JUKU":
@@ -99,11 +101,51 @@
 # print(f"Tere pikkus on {kategooria} {sugu}")
 
 #Üleasnne 8
-tooteid={
-"pimm":(1),
-"leib":(0.80),
-"munad":(1.20),
-"suhkur":(2.59)
-}
+# def shop_simulation():
+#     products = {
+#         "Молоко": (50, 100),
+#         "Хлеб": (30, 70),
+#         "Яйца": (70, 150),
+#         "Сахар": (40, 90),
+#         "Масло": (90, 200)
+#     }
 
-print(f"Kas tahad osta {tooteid}? Hind:{} ")
+   
+#     receipt = []
+
+#     def ask_to_buy(product, price):
+#         nonlocal receipt  
+#         print(f"Хотите ли вы купить {product}? Цена: {price} руб/шт")
+#         answer = input("Введите 'да' или 'нет': ").strip().lower()
+#         if answer == "да":
+#             quantity = int(input(f"Сколько {product} вы хотите купить? "))
+#             total_cost = price * quantity
+#             receipt.append((product, quantity, price, total_cost))
+
+
+#     for product, price_range in products.items():
+#         price = random.randint(*price_range)
+#         ask_to_buy(product, price)
+
+
+#     if receipt:
+#         print("\nВаш чек:")
+#         print("=" * 30)
+#         print(f"{'Товар':<10}{'Кол-во':<8}{'Цена':<8}{'Итого':<8}")
+#         print("=" * 30)
+
+#         total_sum = 0
+#         for item in receipt:
+#             product, quantity, price, total_cost = item
+#             print(f"{product:<10}{quantity:<8}{price:<8}{total_cost:<8}")
+#             total_sum += total_cost
+
+#         print("=" * 30)
+#         print(f"Итого к оплате: {total_sum} руб")
+#     else:
+#         print("Вы ничего не купили. Спасибо за визит!")
+
+
+# if __name__ == "__main__":
+#     shop_simulation()
+
