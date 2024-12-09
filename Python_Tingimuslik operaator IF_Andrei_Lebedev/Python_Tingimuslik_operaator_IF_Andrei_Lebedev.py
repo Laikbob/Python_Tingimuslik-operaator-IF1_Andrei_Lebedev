@@ -1,4 +1,4 @@
-import random
+# import random
 
 # #Üleasnne1 
 # nimi=input("Mis on sinu nimi? ")
@@ -100,52 +100,59 @@ import random
 #     kategooria="Pikk"
 # print(f"Tere pikkus on {kategooria} {sugu}")
 
-#Üleasnne 8
-# def shop_simulation():
-#     products = {
-#         "Молоко": (50, 100),
-#         "Хлеб": (30, 70),
-#         "Яйца": (70, 150),
-#         "Сахар": (40, 90),
-#         "Масло": (90, 200)
-#     }
+# # Üleasnne 8
 
-   
-#     receipt = []
+# tooded = [("piim", 1.10), ("sai", 0.89), ("suhkur", 5.00), ("munad", 2.05)]
+# receipt = []
 
-#     def ask_to_buy(product, price):
-#         nonlocal receipt  
-#         print(f"Хотите ли вы купить {product}? Цена: {price} руб/шт")
-#         answer = input("Введите 'да' или 'нет': ").strip().lower()
-#         if answer == "да":
-#             quantity = int(input(f"Сколько {product} вы хотите купить? "))
-#             total_cost = price * quantity
-#             receipt.append((product, quantity, price, total_cost))
-
-
-#     for product, price_range in products.items():
-#         price = random.randint(*price_range)
-#         ask_to_buy(product, price)
-
-
-#     if receipt:
-#         print("\nВаш чек:")
-#         print("=" * 30)
-#         print(f"{'Товар':<10}{'Кол-во':<8}{'Цена':<8}{'Итого':<8}")
-#         print("=" * 30)
-
-#         total_sum = 0
-#         for item in receipt:
-#             product, quantity, price, total_cost = item
-#             print(f"{product:<10}{quantity:<8}{price:<8}{total_cost:<8}")
-#             total_sum += total_cost
-
-#         print("=" * 30)
-#         print(f"Итого к оплате: {total_sum} руб")
+# for product, price in tooded:
+#     print(f"Tahad osta {product}? Tema hind {price:.2f} EUR.")
+#     vastus = input("Kirjutage 'jah' või 'ei': ").strip().lower()
+#     if vastus == "jah":
+#         kogus = int(input(f"Kui palju sa tahad osta {product}: "))
+#         total_cost = price * kogus
+#         receipt.append((product, kogus, total_cost))
+#         print(f"Kokku tuleb {total_cost:.2f} EUR.")
 #     else:
-#         print("Вы ничего не купили. Спасибо за визит!")
+#         print("Järgmine toode.")
+
+# # Печать чека
+# print("\nTänan ostude eest! Siin on teie ostukviitung:\n")
+# total_sum = 0
+# for product, kogus, total_cost in receipt:
+#     print(f"{product}: x{kogus} ************ {total_cost:.2f} EUR")
+#     total_sum += total_cost
+
+# print(f"\nKokku: {total_sum:.2f} EUR")
 
 
-# if __name__ == "__main__":
-#     shop_simulation()
+# # Üleasnne 9
+# a=float(input("Kirjutage ´A´ külje :"))
+# b=float(input("Kirjutage ´B´ külje :"))
+# c=float(input("Kirjutage ´C´ külje :"))
+# d=float(input("Kirjutage ´D´ külje :"))
+
+# if a==b==c==d:
+#     print("See on ruud")
+# else:
+#     print("See ei ole ruud")
+
+# # Ülesanne 10 
+
+# a=float(input("Esimene arv :"))
+# b=float(input("Teine arv :"))
+# tegevus=(input("Valige tehe (+,-,*,/):"))
+
+# if tegevus=="+":
+#     result=a+b
+#     print(f"Tulemus:{a}+{b}={result}")
+# elif tegevus=="-":
+#     result=a-b
+#     print(f"Tulemus:{a}-{b}={result}")
+# elif tegevus=="*":
+#     result=a*b
+#     print(f"Tulemus:{a}*{b}={result}")
+# elif tegevus=="/":
+#     result=a/b
+#     print(f"Tulemus:{a}/{b}={result}")
 
